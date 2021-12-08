@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { IndiceComponent } from './indice/indice.component';
 import { RegistroComponent } from './modules/autenticacion/registro/registro.component';
 import { MuestraComponent } from './muestra/muestra.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,7 +25,9 @@ import { MuestraComponent } from './muestra/muestra.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

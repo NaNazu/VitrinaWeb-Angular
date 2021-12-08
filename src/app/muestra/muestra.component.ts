@@ -9,10 +9,7 @@ import { ClienteService } from '../services/cliente.service';
 })
 export class MuestraComponent implements OnInit {
 
-  dato = {
-    "id":"13456",
-    "nombre":"Bogotá"
-  }
+
   @Input("dato") cliente: Cliente[]= [];
 
   constructor(private serviceCliente: ClienteService) { }

@@ -4,6 +4,7 @@ import { ClienteComponent } from './consumo/cliente/cliente.component';
 import { IndiceComponent } from './indice/indice.component';
 import { EntrarComponent } from './modules/autenticacion/entrar/entrar.component';
 import { RegistroComponent } from './modules/autenticacion/registro/registro.component';
+import { MuestraComponent } from './muestra/muestra.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
     path: 'clientes',
     component: ClienteComponent
   },
+
   {
     path: 'home',
     component: IndiceComponent

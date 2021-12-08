@@ -8,24 +8,35 @@ import { Cliente } from 'src/app/consumo/models/cliente.models'
 })
 export class ClienteComponent implements OnInit {
 
+  dato = {
+    "id":"13456",
+    "nombre":"Bogotá"
+  }
  cliente: Cliente[]= [];
 
   constructor(private serviceCliente: ClienteService) { }
 
   ngOnInit(): void {
     this.traerClientes();
+    // this.guardarClientes()
   }
 
   traerClientes(){
     this.serviceCliente.traerClientes().subscribe((data: any)=>{
       this.cliente= data;
-      console.log(data)
+    
     })
+    }
+    // guardarClientes(){
+    //   this.serviceCliente.enviarCliente().subscribe((data:any)=> {
+    //     console.log(data)
+    //   })
+    // }
   }
 
   
   
 
  
-}
+
 
