@@ -1,4 +1,7 @@
 <h3>Consumo del Back-end</h3>
+<div class="contenedor">
+  <app-muestra [dato]="cliente"></app-muestra>
+</div>
 <table class="table">
     <thead>
       <tr>
@@ -13,7 +16,7 @@
         <th scope="row">{{item.id}}</th>
         <td>{{item.nombre}}</td>
         <td>{{item.username}}</td>
-        <td>@mdo</td>
+        <td>{{item.correo}}</td>
       </tr>
     </tbody>
   </table>

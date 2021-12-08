@@ -8,7 +8,7 @@ import { Cliente } from 'src/app/consumo/models/cliente.models'
 })
 export class ClienteComponent implements OnInit {
 
-  cliente: Cliente[]= [];
+ cliente: Cliente[]= [];
 
   constructor(private serviceCliente: ClienteService) { }
 
@@ -16,14 +16,16 @@ export class ClienteComponent implements OnInit {
     this.traerClientes();
   }
 
-  //Creamos un método para que ejecute el servicio
-
   traerClientes(){
     this.serviceCliente.traerClientes().subscribe((data: any)=>{
       this.cliente= data;
+      console.log(data)
     })
   }
 
   
+  
+
+ 
 }
 
