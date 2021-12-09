@@ -9,8 +9,12 @@ import { Cliente } from 'src/app/consumo/models/cliente.models'
 export class ClienteComponent implements OnInit {
 
   dato = {
-    "id":"13456",
-    "nombre":"Bogotá"
+    "id": "",
+    "nombre":"Gabriel",
+    "username":"lolo32",
+    "correo": "gg2",
+    "contraseña": "23",
+    "hash": ""
   }
  cliente: Cliente[]= [];
 
@@ -27,11 +31,11 @@ export class ClienteComponent implements OnInit {
     
     })
     }
-    // guardarClientes(){
-    //   this.serviceCliente.enviarCliente().subscribe((data:any)=> {
-    //     console.log(data)
-    //   })
-    // }
+    guardar(dato:Cliente){
+      this.serviceCliente.enviarCliente(this.dato).subscribe((data:any)=> {
+        console.log(data)
+      })
+    }
   }
 
   

@@ -7,9 +7,14 @@ import { RegistroComponent } from './modules/autenticacion/registro/registro.com
 import { MuestraComponent } from './muestra/muestra.component';
 
 const routes: Routes = [
+
   {
     path: '',
     component: RegistroComponent
+  },
+  {
+    path: 'login',
+    component: EntrarComponent
   },
   {
     path: 'clientes',
@@ -21,9 +26,10 @@ const routes: Routes = [
     component: IndiceComponent
   },
   {
-    path: 'login',
-    component: EntrarComponent
+    path: "**",
+    redirectTo: ''
   }
+  
 ];
 
 @NgModule({

@@ -1,5 +1,7 @@
-import { Component, OnInit, Input} from '@angular/core';
-import { Cliente } from 'src/app/consumo/models/cliente.models';
+import { Component, OnInit} from '@angular/core';
+
+
+
 @Component({
   selector: 'app-registro',
   templateUrl: './registro.component.html',
@@ -7,14 +9,17 @@ import { Cliente } from 'src/app/consumo/models/cliente.models';
 })
 export class RegistroComponent implements OnInit {
 
-  @Input("dato") cliente: Cliente[]= [];
+  
 
   constructor() {}
 
   ngOnInit(): void {
+}
+    
+ 
   }
 
 
 
   
-}
+

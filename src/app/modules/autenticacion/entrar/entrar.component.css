@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .entrar{
     width: 400px;
     background: #24303c;
@@ -74,4 +75,22 @@
     font-size: 16px;
     cursor: pointer;
 }
+.entrar a{
+    height: 40px;
+    text-align: center;
+    font-size:18px;
+}
+
+.entrar a{
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+
+.entrar a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+    
+}
+
 
