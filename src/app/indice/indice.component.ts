@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ClienteService } from '../services/cliente.service';
 
 @Component({
   selector: 'app-indice',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndiceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private clienteService :ClienteService) { }
 
   ngOnInit(): void {
+    this.traerClientes
+  }
+
+  traerClientes(){
+    this.clienteService.traerClientes().subscribe(clientes =>{
+      console.log(clientes)
+      })
   }
 
 }

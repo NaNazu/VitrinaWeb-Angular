@@ -7,9 +7,12 @@ import { AppComponent } from './app.component';
 import { ClienteComponent } from './consumo/cliente/cliente.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IndiceComponent } from './indice/indice.component';
-import { RegistroComponent } from './modules/autenticacion/registro/registro.component';
+// import { RegistroComponent } from './modules/autenticacion/registro/registro.component';
 import { MuestraComponent } from './muestra/muestra.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EntrarComponent } from './usuario/entrar/entrar.component';
+import { RegistrarComponent } from './usuario/registrar/registrar.component';
+
 
 
 @NgModule({
@@ -17,17 +20,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     ClienteComponent,
     IndiceComponent,
-    RegistroComponent,
+    // RegistroComponent,*
     MuestraComponent,
-    
-    
+    EntrarComponent,
+    RegistrarComponent,
+  
+  
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    FormsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

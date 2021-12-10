@@ -3,6 +3,6 @@ export interface Cliente{
     nombre: string;
     correo: string;
     username: string;
-    password: string;
-    hash: string;
+    password?: string;
+    hash?: string;
 }

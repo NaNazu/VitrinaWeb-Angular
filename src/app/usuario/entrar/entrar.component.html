@@ -1,0 +1,11 @@
+<div>
+    <form [formGroup]="loginForm" (ngSubmit)="entrar()">
+        <section class="entrar">
+            <h4>Iniciar sesión</h4>
+            <input class="controls" type="text" formControlName="username" name="usuario" id="usuario" placeholder="Ingrese su usuario">
+            <input class="controls" type="password" formControlName="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+            <input class="boton" type="submit" value="Iniciar sesión">
+        </section>
+    </form>
+    </div>
+    
