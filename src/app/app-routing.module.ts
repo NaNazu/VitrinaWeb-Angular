@@ -5,6 +5,7 @@ import { IndiceComponent } from './indice/indice.component';
 import { EntrarComponent } from './usuario/entrar/entrar.component';
 import { RegistrarComponent } from './usuario/registrar/registrar.component';
 import { MuestraComponent } from './muestra/muestra.component';
+import { ValidarTokenGuard } from './guards/validar-token.guard';
 
 const routes: Routes = [
 
@@ -14,16 +15,21 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    component: EntrarComponent
+    component: EntrarComponent,
+
   },
   {
     path: 'clientes',
-    component: ClienteComponent
+    component: ClienteComponent,
+    canActivate: [ValidarTokenGuard],
+    canLoad:[ValidarTokenGuard]
   },
 
   {
     path: 'home',
-    component: IndiceComponent
+    component: IndiceComponent,
+    canActivate: [ValidarTokenGuard],
+    canLoad:[ValidarTokenGuard]
   },
   {
     path: "**",
