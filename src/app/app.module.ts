@@ -20,7 +20,6 @@ import { RegistrarComponent } from './usuario/registrar/registrar.component';
     AppComponent,
     ClienteComponent,
     IndiceComponent,
-    // RegistroComponent,*
     MuestraComponent,
     EntrarComponent,
     RegistrarComponent,
