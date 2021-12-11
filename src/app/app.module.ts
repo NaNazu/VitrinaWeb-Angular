@@ -12,7 +12,6 @@ import { MuestraComponent } from './muestra/muestra.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EntrarComponent } from './usuario/entrar/entrar.component';
 import { RegistrarComponent } from './usuario/registrar/registrar.component';
-import { ProductosComponent } from './productos/productos/productos.component';
 import { ItemsComponent } from './productos/items/items/items.component';
 import { ItemComponent } from './productos/item/item/item.component';
 
@@ -26,7 +25,6 @@ import { ItemComponent } from './productos/item/item/item.component';
     MuestraComponent,
     EntrarComponent,
     RegistrarComponent,
-    ProductosComponent,
     ItemsComponent,
     ItemComponent,
   
