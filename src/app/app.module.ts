@@ -35,7 +35,7 @@ import { ItemComponent } from './productos/item/item/item.component';
     ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
