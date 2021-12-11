@@ -2,6 +2,13 @@
     display: flex;
     box-sizing: border-box;
 }
+.completo{
+    color: #ccc;
+    text-decoration: line-through;
+}
+.completo.total{
+    color: #ccc;
+}
 .div{
     padding:5px 0;
 }

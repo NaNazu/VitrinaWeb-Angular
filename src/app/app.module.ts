@@ -14,6 +14,8 @@ import { EntrarComponent } from './usuario/entrar/entrar.component';
 import { RegistrarComponent } from './usuario/registrar/registrar.component';
 import { ItemsComponent } from './productos/items/items/items.component';
 import { ItemComponent } from './productos/item/item/item.component';
+import { TotalComponent } from './total/total.component';
+import { AdditemComponent } from './additem/additem.component';
 
 
 
@@ -27,6 +29,8 @@ import { ItemComponent } from './productos/item/item/item.component';
     RegistrarComponent,
     ItemsComponent,
     ItemComponent,
+    TotalComponent,
+    AdditemComponent,
   
   
   ],
@@ -36,6 +40,7 @@ import { ItemComponent } from './productos/item/item/item.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
